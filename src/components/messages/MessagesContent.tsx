@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Input from "../forms/Input";
 
 export default async function MessagesContent() {
   return (

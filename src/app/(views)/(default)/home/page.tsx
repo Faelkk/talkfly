@@ -14,8 +14,8 @@ export default async function HomePage() {
   const hasConnection = false;
   return (
     <Container className="flex max-w-[85rem] mt-10 justify-center ">
-      <section className="bg-gray-50 w-full p:w-[500px] md:w-full rounded h-[48rem] flex shadow-md">
-        {hasConnection ? <MessagesNoConnections /> : <Messages />}
+      <section className="bg-gray-50 w-full p:w-[500px] md:w-full rounded h-[48rem] flex shadow-md mb-10">
+        {hasConnection ? <Messages /> : <MessagesNoConnections />}
       </section>
     </Container>
   );

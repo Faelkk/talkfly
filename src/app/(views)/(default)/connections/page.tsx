@@ -1,3 +1,9 @@
+import AddNewConection from "@/components/connections/AddNewConection";
+import Connections from "@/components/connections/Connections";
+import ConnectionsEmpty from "@/components/connections/ConnectionsEmpty";
+import Solicitations from "@/components/connections/Solicitations";
+import SolicitationsEmpty from "@/components/connections/SolicitationsEmpty";
+import Container from "@/components/container/container";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,9 +13,14 @@ export const metadata: Metadata = {
 };
 
 export default async function ConnectionsPage() {
+  const hasSolicitations = true;
+  const hasConnections = true;
   return (
-    <main>
-      <h1>Connections</h1>
-    </main>
+    <Container className="flex flex-col max-w-[85rem]">
+      <AddNewConection />
+      {hasSolicitations ? <Solicitations /> : <SolicitationsEmpty />}
+
+      {hasConnections ? <Connections /> : <ConnectionsEmpty />}
+    </Container>
   );
 }

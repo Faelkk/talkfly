@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       screens: {
         xl: "1200px",
+        p2: "560px",
         p: "500px",
+
         pp: "360px",
         md2: "850px",
       },
@@ -31,9 +33,12 @@ const config: Config = {
           100: "#F8F9FA",
           150: "#F2F2F2",
           200: "#E5E5E5",
+          250: " #F4F4F4",
           300: "#BBBBBB",
+          350: "#F0F0F0",
           400: "#D9D9D9",
           500: "#8D8A8A",
+          600: "#4E4E4E",
         },
       },
     },
