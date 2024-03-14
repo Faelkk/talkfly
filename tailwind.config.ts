@@ -12,10 +12,12 @@ const config: Config = {
         xl: "1200px",
         p: "500px",
         pp: "360px",
+        md2: "850px",
       },
       fontFamily: {
         poppins: ["var(--font-primary-poppins)"],
         dmSans: ["var(--font-primary-dmSans)"],
+        roboto: ["var(--font-body)"],
       },
       colors: {
         purple: {
@@ -25,9 +27,13 @@ const config: Config = {
         },
         gray: {
           50: "#FFFFFF",
+          80: "#F1F1F1",
           100: "#F8F9FA",
+          150: "#F2F2F2",
           200: "#E5E5E5",
           300: "#BBBBBB",
+          400: "#D9D9D9",
+          500: "#8D8A8A",
         },
       },
     },

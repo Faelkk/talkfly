@@ -8,6 +8,7 @@ export default async function Logo({ className }: { className: string }) {
       height={60}
       className={className}
       alt="Logo talkfly"
+      priority
     />
   );
 }
