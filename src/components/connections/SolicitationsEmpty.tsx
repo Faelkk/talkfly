@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function SolicitationsEmpt() {
+export default async function SolicitationsEmpty() {
   return (
     <section className="flex flex-col  mt-10 md:mt-32">
       <h2 className="font-poppins text-[32px] font-semibold text-center">
