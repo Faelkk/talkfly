@@ -1,6 +1,6 @@
 "use client";
 
-import signin from "@/actions/signin";
+import signin from "@/actions/auth/signin";
 import Button from "@/components/forms/Button";
 import Input from "@/components/forms/Input";
 import ErrorMessage from "@/components/helpers/error-message";

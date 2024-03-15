@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { cn } from "@/functions/cn";
 
-export default async function Container({
+export default function Container({
   children,
   className,
 }: {

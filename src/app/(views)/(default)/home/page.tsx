@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Junte-se à comunidade Talkfly para explorar conversas em tempo real. Mergulhe em diversos assuntos, conecte-se com pessoas de mentalidade semelhante e amplie suas conexões.",
 };
 
-export default async function HomePage() {
+export default function HomePage() {
   const hasConnection = false;
   return (
     <Container className="flex max-w-[85rem] mt-10 justify-center ">

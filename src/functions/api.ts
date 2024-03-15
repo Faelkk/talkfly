@@ -11,3 +11,9 @@ export function SIGNUP_USER() {
     url: API_URL + "/signup",
   };
 }
+
+export function USER_GET() {
+  return {
+    url: API_URL + "/me",
+  };
+}

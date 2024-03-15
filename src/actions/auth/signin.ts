@@ -2,7 +2,6 @@
 
 import { SIGNIN_USER } from "@/functions/api";
 import apiError from "@/functions/api-error";
-import { error } from "console";
 import { cookies } from "next/headers";
 
 export default async function signin(state: {}, formData: FormData) {

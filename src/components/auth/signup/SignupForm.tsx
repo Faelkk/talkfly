@@ -1,11 +1,24 @@
 "use client";
 
-import signup from "@/actions/signup";
+import signup from "@/actions/auth/signup";
 import Button from "@/components/forms/Button";
 import Input from "@/components/forms/Input";
 import ErrorMessage from "@/components/helpers/error-message";
 import { useEffect } from "react";
-import { useFormState } from "react-dom";
+import { useFormState, useFormStatus } from "react-dom";
+
+function FormButton() {
+  const { pending } = useFormStatus();
+  return (
+    <>
+      {pending ? (
+        <Button disabled={pending}>Entrando...</Button>
+      ) : (
+        <Button disabled={pending}>Entrar</Button>
+      )}
+    </>
+  );
+}
 
 export default function SignupForm() {
   const [state, action] = useFormState(signup, {
@@ -25,7 +38,7 @@ export default function SignupForm() {
       <Input type="text" name="username" placeholder="Nome de usuario" />
       <Input type="password" name="password" placeholder="Senha" />
       <ErrorMessage error={state.error} />
-      <Button>Criar conta</Button>
+      <FormButton />
     </form>
   );
 }

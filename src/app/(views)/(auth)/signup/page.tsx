@@ -2,7 +2,7 @@ import Logo from "@/components/Logo/logo";
 import SignupForm from "@/components/auth/signup/SignupForm";
 import Link from "next/link";
 
-export default async function SignupPage() {
+export default function SignupPage() {
   return (
     <div>
       <div className="flex flex-col items-center mb-10">

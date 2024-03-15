@@ -1,17 +1,34 @@
+import React, { useRef } from "react";
 import Image from "next/image";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
 
-export default async function EditUserModal() {
+interface EditUserModalProps {
+  onToggle: () => void;
+}
+
+export default function EditUserModal({ onToggle }: EditUserModalProps) {
+  const modalRef = useRef(null);
+
+  useOutsideClick(modalRef, onToggle);
+
   return (
     <aside className="fixed h-screen w-full bg-black/50 top-0 left-0 z-10">
-      <section className="bg-gray-350 absolute w-[28.125rem] right-0 h-full  flex flex-col">
+      <section
+        className="bg-gray-350 absolute  w-full md:w-[28.125rem] right-0 h-full  flex flex-col"
+        ref={modalRef}
+      >
         <header className="flex mx-5 mt-5 items-center justify-center relative">
-          <Image
-            src="/assets/arrow-back.svg"
-            width={24}
-            height={24}
-            className="w-5 h-5 absolute  left-3 md:left-0 top-3"
-            alt="Voltar"
-          />
+          <button
+            onClick={onToggle}
+            className="w-5 h-5 absolute left-0 p:left-3 md:left-0 top-3"
+          >
+            <Image
+              src="/assets/arrow-back.svg"
+              width={24}
+              height={24}
+              alt="Voltar"
+            />
+          </button>
           <h1 className="font-poppins text-[32px] font-semibold">Seu perfil</h1>
         </header>
         <div className="border border-gray-400 mt-5 mx-5"></div>

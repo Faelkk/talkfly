@@ -3,7 +3,7 @@ import MessagesContent from "./MessagesContent";
 import MessagesNoContent from "./MessagesNoContent";
 
 export default async function Messages() {
-  const hasContent = false;
+  const hasContent = true;
   return (
     <>
       <div className="w-full md:w-[300px] flex flex-col h-full border-r border-gray-400">

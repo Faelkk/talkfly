@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeaderMessages from "../headerMessages/HeaderMessages";
 import MessagesNoContent from "./MessagesNoContent";
+import Link from "next/link";
 
 export default async function MessagesNoConnections() {
   return (
@@ -23,9 +24,11 @@ export default async function MessagesNoConnections() {
         </div>
 
         <div className="flex justify-center items-center">
-          <button className="mb-20 border border-black font-poppins font-medium text-[18px]  p-3 rounded">
-            Procurar conexões
-          </button>
+          <Link href="/connections">
+            <button className="mb-20 border border-black font-poppins font-medium text-[18px]  p-3 rounded">
+              Procurar conexões
+            </button>
+          </Link>
         </div>
       </div>
       <MessagesNoContent />

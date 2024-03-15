@@ -5,7 +5,7 @@ type InputProps = ComponentProps<"input"> & {
   type: string;
 };
 
-export default async function Input({ error, type, ...props }: InputProps) {
+export default function Input({ error, type, ...props }: InputProps) {
   return (
     <div className="mb-4">
       <input
