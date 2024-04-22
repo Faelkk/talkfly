@@ -1,9 +1,7 @@
-import AddNewConection from "@/components/connections/AddNewConection";
-import Connections from "@/components/connections/Connections";
-import ConnectionsEmpty from "@/components/connections/ConnectionsEmpty";
-import Solicitations from "@/components/connections/Solicitations";
-import SolicitationsEmpty from "@/components/connections/SolicitationsEmpty";
-import Container from "@/components/container/container";
+import Container from "@/components/Container/container";
+import ConnectionsSection from "@/components/pages/connections/ConnectionsSection";
+import SolicitationsSection from "@/components/pages/connections/SolicitationsSection";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,14 +11,11 @@ export const metadata: Metadata = {
 };
 
 export default async function ConnectionsPage() {
-  const hasSolicitations = true;
-  const hasConnections = true;
   return (
     <Container className="flex flex-col max-w-[85rem]">
-      <AddNewConection />
-      {hasSolicitations ? <Solicitations /> : <SolicitationsEmpty />}
+      <SolicitationsSection />
 
-      {hasConnections ? <Connections /> : <ConnectionsEmpty />}
+      <ConnectionsSection />
     </Container>
   );
 }

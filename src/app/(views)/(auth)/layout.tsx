@@ -1,5 +1,5 @@
-import AuthImage from "@/components/auth/auth-image";
-import Container from "@/components/container/container";
+import Container from "@/components/Container/container";
+import AuthImage from "@/components/pages/auth/auth-image";
 import { ReactNode } from "react";
 
 export default function RootLayout({

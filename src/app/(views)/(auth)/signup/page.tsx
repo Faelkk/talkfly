@@ -1,5 +1,5 @@
-import Logo from "@/components/Logo/logo";
-import SignupForm from "@/components/auth/signup/SignupForm";
+import Logo from "@/components/helpers/logo";
+import SignupForm from "@/components/pages/auth/signup/SignupForm";
 import Link from "next/link";
 
 export default function SignupPage() {

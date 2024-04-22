@@ -14,6 +14,7 @@ const config: Config = {
         p: "500px",
 
         pp: "360px",
+        sm: "330px",
         md2: "850px",
       },
       fontFamily: {

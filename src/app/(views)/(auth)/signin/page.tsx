@@ -1,5 +1,5 @@
-import Logo from "@/components/Logo/logo";
-import SigninForm from "@/components/auth/signin/SigninForm";
+import Logo from "@/components/helpers/logo";
+import SigninForm from "@/components/pages/auth/signin/SigninForm";
 import Link from "next/link";
 
 export default function SigninPage() {

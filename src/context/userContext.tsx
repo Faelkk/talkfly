@@ -14,7 +14,7 @@ type IUserContext = {
   setUser: Dispatch<SetStateAction<User | null>>;
 };
 
-type User = {
+export type User = {
   id: string;
   email: string;
   username: string;

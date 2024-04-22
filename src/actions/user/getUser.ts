@@ -3,7 +3,6 @@
 import { USER_GET } from "@/functions/api";
 import apiError from "@/functions/api-error";
 import { cookies } from "next/headers";
-// import { cache } from "react";
 
 export type User = {
   id: string;
@@ -17,12 +16,21 @@ export type User = {
 export default async function userGet() {
   try {
     const token = cookies().get("token")?.value;
-    if (!token) throw new Error("Token não encontrando");
+    const apiKey = cookies().get("apiKey")?.value;
+
+    if (!token || !apiKey) {
+      throw new Error("Internal server error");
+    }
+    const headers = new Headers();
+    headers.append("Authorization", "Bearer " + token);
+    headers.append("apiKey", apiKey);
+
     const { url } = USER_GET();
     const response = await fetch(url, {
       method: "GET",
       headers: {
         Authorization: "Bearer " + token,
+        apiKey: apiKey,
       },
       next: {
         revalidate: 60,

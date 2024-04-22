@@ -9,16 +9,19 @@ export default async function signup(state: {}, formData: FormData) {
   const username = formData.get("username") as string | null;
   const password = formData.get("password") as string | null;
   const name = formData.get("name") as string | null;
+
   try {
-    if (!username || !password || !email) throw new Error("Preencha os dados");
+    if (!username || !password || !email || !name)
+      throw new Error("Preencha os dados");
+
     const { url } = SIGNUP_USER();
     const response = await fetch(url, {
       method: "POST",
-      body: JSON.stringify({ email, password, username, name }),
+      body: JSON.stringify({ email, username, password, name }),
     });
 
     if (!response.ok) {
-      throw new Error("Credenciais invalidas");
+      throw new Error("Error ao criar usuario");
     }
 
     const data = await response.json();
@@ -38,8 +41,6 @@ export default async function signup(state: {}, formData: FormData) {
     });
     return { data: null, ok: true, error: "" };
   } catch (err: unknown) {
-    console.log(err);
-
     return apiError(err);
   }
 }
