@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Talkfly
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+O Talkfly é uma poderosa aplicação de comunicação em tempo real, com uma interface intuitiva e responsiva desenvolvida em Next.js. Com recursos de autenticação de usuários, gerenciamento de conexões e solicitações, e a capacidade de enviar mensagens, áudio e imagens instantaneamente, o Talkfly proporciona uma experiência de comunicação fluida e eficiente. Além disso, integra-se perfeitamente com a Talkfly-API, ampliando ainda mais suas funcionalidades e possibilitando uma comunicação mais dinâmica e personalizada.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Recursos Principais
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Comunicação em tempo real.
+- Gerenciamento de conexões e solicitações.
+- Envio de Arquivos Multimídia: Capacidade de enviar e receber arquivos de áudio e fotos durante as conversas.
+- Interface acessiva e responsiva.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Layout
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<img style="width: 390px"  src="public/default/login.png">
 
-## Learn More
+<img style="width: 390px"  src="public/default/home.png " />
 
-To learn more about Next.js, take a look at the following resources:
+<img style="width: 390px"  src="public/default/perfil.png" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img style="width: 390px"  src="public/default/connection.png" />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img style="width: 390px"  src="public/default/connection2.png" />
 
-## Deploy on Vercel
+<img style="width: 390px"  src="public/default/solicitations.png" />
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tecnologias
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+💻 **Front-end**
+
+- [Next](https://nextjs.org/docs)
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org)
+- [Vite](https://vitejs.dev/)
+
+📚 **Bibliotecas**
+
+- [clsx](https://github.com/lukeed/clsx)
+- [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react)
+- [jose](https://www.npmjs.com/package/jose)
+
+🎨 **Estilização**
+
+- [tailwindcss](https://tailwindcss.com/docs/installation)
+
+  🔋 **Versionamento e Deploy**
+
+- [Git](https://git-scm.com)"
+
+⚙️ **Configuranções e Instalações**
+
+Clone do Projeto
+
+    $ git clone https://github.com/Faelkk/my-portfolio
+
+Instalando as dependências
+
+    $ npm install
+
+Iniciando o projeto
+
+    $ npm run dev
+
+<br>
+
+**Como me ajudar nesse projeto?**
+
+- Você ira me ajudar muito me seguindo aqui no GitHub
+- Dando uma estrela no projeto
+- Conectando-se comigo no LinkedIn para fazer parte da minha rede.
+
+<br>
+
+**Feito por**
+[Rafael Achtenberg](linkedin.com/in/rafael-achtenberg-7a4b12284/)
