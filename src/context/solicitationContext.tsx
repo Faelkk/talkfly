@@ -47,10 +47,6 @@ export function SolicitationContextProvider({
     SolicitationsData[] | null
   >(solicitation);
 
-  useEffect(() => {
-    console.log(solicitationState);
-  }, [solicitationState]);
-
   return (
     <SolicitationContext.Provider
       value={{
